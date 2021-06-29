@@ -1,0 +1,13 @@
+node_modules
+.git
+/src/**
+/public/**
+.babelrc
+.env.*
+.gitlab-ci.yml
+.prettierrc
+composer.json
+deploy.php
+deployer.phar
+jsconfig.json
+rollup.config.js

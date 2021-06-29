@@ -1,0 +1,5 @@
+[user]
+	name = shaho
+	email = 
+[core]
+	excludesfile = /Users/shaho/.gitignore

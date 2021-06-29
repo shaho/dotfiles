@@ -1,0 +1,6 @@
+Host github.com 
+ IdentityFile ~/.ssh/github_rsa
+
+ Host git.ilcd.rocks
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/gig_rsa
