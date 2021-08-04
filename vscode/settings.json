@@ -2,12 +2,13 @@
   // WorkBench
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Moon",
 
   // Editor
   "editor.fontSize": 16,
   "editor.fontFamily": "Fira Code, Dank Mono, Oprator Mono Medium, Operator Mono, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
+  "editor.tabSize": 2,
   "editor.cursorStyle": "line-thin",
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
@@ -34,19 +35,24 @@
   // ESlint
   "eslint.validate": ["javascript", "javascriptreact"],
 
+  // Javascript
   "javascript.updateImportsOnFileMove.enabled": "always",
 
   "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
 
+  // Emmet
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
 
+  // Tailwind
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
 
+  // Live server
   "liveServer.settings.donotShowInfoMsg": true,
+
   "security.workspace.trust.untrustedFiles": "open"
 }

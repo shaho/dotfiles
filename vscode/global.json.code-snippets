@@ -1,0 +1,192 @@
+{
+  // Console.log
+  "console.log": {
+    "prefix": "clg",
+    "body": ["console.log($1);"],
+    "description": "console.log"
+  },
+
+  // export const
+  "export const": {
+    "prefix": "ec",
+    "body": ["export const "],
+    "description": "export const"
+  },
+
+  // export defualt
+  "export defualt": {
+    "prefix": "ed",
+    "body": ["export default "],
+    "description": "export defualt"
+  },
+
+  // export defualt function
+  "export defualt function": {
+    "prefix": "edf",
+    "body": ["export default function "],
+    "description": "export defualt function"
+  },
+
+  // module exports
+  "module exports": {
+    "prefix": "me",
+    "body": ["module.exports "],
+    "description": "module exports"
+  },
+
+  // Let
+  "let": {
+    "prefix": "le",
+    "body": ["let $1 = $2"],
+    "description": "let"
+  },
+
+  // Named Function
+  "Named Function": {
+    "prefix": "nfn",
+    "body": ["function ${1:functionName}($2) {", "  $3", "}"],
+    "description": "Named Function"
+  },
+
+  // Arrow Function Method
+  "Arrow Function Method": {
+    "prefix": "arm",
+    "body": ["${1:functionName} = ($2) => {", "  $3", "}"],
+    "description": "Arrow Function Method"
+  },
+
+  // Arrow Function
+  "Arrow Function": {
+    "prefix": "arn",
+    "body": ["const ${1:functionName} = ($2) => {", "  $3", "}"],
+    "description": "Arrow Function"
+  },
+
+  // Long callback function
+  "Long callback function": {
+    "prefix": "lfc",
+    "body": ["(${1:instance}) => {", "  return (", "    $2", "  )", "}"],
+    "description": "Long callback function"
+  },
+
+  // Short callback function
+  "Short callback function": {
+    "prefix": "lfcs",
+    "body": ["(${1:instance}) => ($2)"],
+    "description": "Short callback function"
+  },
+
+  /* -------------------------------------------------------------------------- */
+  /*                                    REACT                                   */
+  /* -------------------------------------------------------------------------- */
+
+  // Dummy markup
+  "divh1": {
+    "prefix": "xxx",
+    "body": ["<div><h1>Tets</h1></div>"],
+    "description": "divh1"
+  },
+
+  // React Function Component
+  "React Function Component": {
+    "prefix": "fc",
+    "body": [
+      "export default function ${1:functionName}($2) {",
+      "  return (",
+      "    <div>",
+      "      <h1>Test</h1>",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "React Function Component"
+  },
+
+  // const React Function Component
+  "const React Function Component": {
+    "prefix": "fcc",
+    "body": [
+      "export const ${1:functionName} = ($2) => {",
+      "  return (",
+      "    <div>",
+      "      <h1>Test</h1>",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "const React Function Component"
+  },
+
+  // Arrow Function Submit Method
+  "Arrow Function Submit Method": {
+    "prefix": "arms",
+    "body": [
+      "${1:functionName} = (event) => {",
+      "  event.preventDefault();",
+      "  $2",
+      "}"
+    ],
+    "description": "Arrow Function Submit Method"
+  },
+
+  // React Class Component
+  "React Class Component": {
+    "prefix": "cc",
+    "body": [
+      "import React, { Component } from \"react\";",
+      "",
+      "class ${1:className} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <div>",
+      "        <h1>Test</h1>",
+      "      </div>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "export default $1;",
+      ""
+    ],
+    "description": "React Class Component"
+  },
+
+  "useState": {
+    "prefix": "us",
+    "body": ["const [$1, set${1/(.*)/${1:/capitalize}/}] = useState($2);"],
+    "description": "creates use state"
+  },
+
+  /* -------------------------------------------------------------------------- */
+  /*                                 TYPESCRIPT                                 */
+  /* -------------------------------------------------------------------------- */
+
+  // Define New Type in TypeScript
+  "Typecript Type": {
+    "prefix": "ty",
+    "body": ["type ${1:typename} = {", "  $2: $3", "};"],
+    "description": "Define New Type in TypeScript"
+  },
+
+  /* -------------------------------------------------------------------------- */
+  /*                              STYLED-COMPONENTS                             */
+  /* -------------------------------------------------------------------------- */
+
+  // New Styled-component definition
+  "Styled Component": {
+    "prefix": "sc",
+    "body": [
+      "export const ${1:functionName} = styled.${2}`",
+      "  ${3}: ${4} ",
+      "`"
+    ],
+    "description": "New Styled-component definition"
+  },
+
+  // Styled Component Props
+  "Styled Component Props": {
+    "prefix": "scp",
+    "body": ["${(props) => (props.${1} ? ${2} : ${3})};"],
+    "description": "Styled Component Props"
+  }
+}

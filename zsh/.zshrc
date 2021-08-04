@@ -7,12 +7,11 @@ export ZSH="/Users/shaho/.oh-my-zsh"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
 # -------
 # Aliases
 # -------
 # alias c="code ."
-alias c="code-insiders ."
+alias c="code ."
 alias o="open ."
 alias cc="clear"
 
@@ -31,8 +30,7 @@ alias lsa="ls -al"
 alias ls1="ls -1"
 alias d="cd /Users/shaho/Desktop/dev"
 
-# alias z="cd /Users/shaho && code .zshrc"
-alias z="cd /Users/shaho && code-insiders .zshrc"
+alias z="cd /Users/shaho && code .zshrc"
 
 # ----------------------
 # GIG Aliases
@@ -52,7 +50,11 @@ alias gi="git init"
 # alias gs="git status"
 alias gl="git log"
 alias gb="git branch"
+alias gc="git commit -m "
 alias gll="git log --pretty=oneline --abbrev-commit "
+alias gllg="git log --oneline --graph"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 alias ga="git add -A"
 alias gp="git pull"
 alias gf="git fetch"
@@ -63,9 +65,9 @@ alias gpp="git push"
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
 
 
-function gc () { 
-    git commit -m "$@"
-}
+# function gc () { 
+#     git commit -m "$@"
+# }
 
 function mkcd() {
 	mkdir $1 && cd $1
