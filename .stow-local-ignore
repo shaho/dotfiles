@@ -1,0 +1,40 @@
+# Comments and blank lines are allowed.
+#
+# NOTE: creating this file REPLACES stow's built-in default ignore list
+# entirely, so the VCS/editor patterns below are copied verbatim from that
+# default. Removing them would make stow symlink .git into $HOME.
+
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+\.DS_Store
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+# Backup-only directories: they live in this repo for safekeeping and are
+# never symlinked into $HOME. Their contents are not in stow's $HOME-relative
+# layout, so stowing them would just litter the home directory.
+^/git$
+^/npm$
+^/prettier$
+^/ssh$
+^/starship$
+^/vscode$
+^/zsh$
